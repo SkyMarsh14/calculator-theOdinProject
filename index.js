@@ -76,9 +76,10 @@ const equalBtn=document.querySelector('.equalBtn');
 
 //define second Number when = was clicked as well as to display the result.
 equalBtn.addEventListener('click',()=>{
+    if(firstNumber===undefined) return;
     secondNumber = Number(inputDisplay.textContent)
     inputDisplay.textContent=Math.floor(1000*(operate()))/1000;
-    firstNumber=inputDisplay.textContent;
+    firstNumber = inputDisplay.textContent;
 }
 )
 
