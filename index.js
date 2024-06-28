@@ -83,3 +83,14 @@ equalBtn.addEventListener('click',()=>{
 }
 )
 
+const backspace=document.querySelector('.backspace');
+
+backspace.addEventListener('click',()=>{
+    const removeLastNumber=inputDisplay.textContent
+    .toString()
+    .split('')
+    .slice(0,-1)
+    .join('')
+    inputDisplay.textContent=removeLastNumber;
+});
+
